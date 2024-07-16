@@ -13,9 +13,10 @@
   </head>
   
   <body>
+    <!-- barra de navegació -->
     <nav class="navbar navbar-expand-lg navbar-light bg-white top-50">
       <div class="container-fluid pt-4 m7-3">
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand mt-5" href="#">
           <img src="img/logo-bookmark.svg" alt="logo-bookmark">
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
@@ -33,12 +34,13 @@
               <a class="nav-link" href="#">CONTACT</a>
             </li>
             <li>
-              <button class="btn btn-danger text-uppercase" type="submit">Login</button>
+              <button class="btn btn-danger text-uppercase shadow" type="submit">Login</button>
             </li>
           </ul>   
         </div>
       </div>
     </nav>
+<!-- contingut principal -->
     <div class="row align-items-center mt-5">
       <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
         <h6 class="display-6 fw-bold">A Simple Bookmark Manager</h6>
@@ -55,38 +57,77 @@
         <img src="img/illustration-hero.svg" class="img-fluid" alt="El mundo">
       </div>
     </div>
-    <div class="justify-content-center row mt-5 ">
-      <div class="col-sm-12 col-md-6 col-lg-8 col-xl-8 ">
-        <h6 class="text-center">Features</h6>
-        <p class="text-center">Uur aim is to make it quick ana easy tor you to access your favourite websites. Your bookmarks sync between your devices so you call access them on the go
-          Simple Bookmarking opeedy searching Lasy onalng</p>
+<!-- funcionalitats -->
+    <div class="column">
+      <div class="justify-content-center row mt-5 ">
+        <div class="col-sm-12 col-md-6 col-lg-8 col-xl-8 ">
+          <h6 class="text-center">Features</h6>
+          <p class="text-center">Uur aim is to make it quick ana easy tor you to access your favourite websites. Your bookmarks sync between your devices so you call access them on the go
+            Simple Bookmarking opeedy searching Lasy onalng</p>
+          </div>
+      </div>
+      <nav class="">
+        <div class="nav nav-tabs justify-content-center " role="tablist">
+          <button class="nav-link active border-bottom" id="simple-bookmarking-tab" data-bs-toggle="tab" data-bs-target="#bookmarking" type="button" role="tab" aria-controls="bookmarking" aria-selected="true">Simple Bookmarking</button>
+          <button class="nav-link" id="speedy-searching-tab" data-bs-toggle="tab" data-bs-target="#searching" type="button" role="tab" aria-controls="searching" aria-selected="true">Speedy Searching</button>
+          <button class="nav-link" id="easy-sharing-tab" data-bs-toggle="tab" data-bs-target="#sharing" type="button" role="tab" aria-controls="sharing" aria-selected="true">Easy Sharing</button>
+        </div>
+      </nav>
+      <div class="tab-content">
+        <div class="tab-pane active" id="bookmarking" role="tabpanel" aria-labelledby="simple-bookmarking-tab">
+          <div class="row align-items-center mt-5">
+            <div class="justify-content-center col-sm-12 col-md-6 col-lg-6 col-xl-6">
+              <img src="img/illustration-features-tab-1.svg" class="img-fluid" alt="Features-1">
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
+              <h6 class="display-6 fw-bold">Bookmark in one click</h6>
+              <p class="text-justify mb-5">
+                Organize your bookmarks however you like. Our simple arag-and-arop Interrace cives you complete control over how vou manage vour tavourite sites.
+              </p>
+              <button class="btn btn-primary col-4 shadow" href="#">More info</button>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane" id="searching" role="tabpanel" aria-labelledby="speedy-searching-tab">
+          <div class="row align-items-center mt-5">
+            <div class="justify-content-center col-sm-12 col-md-6 col-lg-6 col-xl-6">
+              <img src="img/illustration-features-tab-2.svg" class="img-fluid" alt="Features-1">
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
+              <h6 class="display-6 fw-bold">Intelligent search</h6>
+              <p class="text-justify mb-5">
+                Our powerful search feature will help you find saved sites in no time at all. No need to trawl through all of your bookmarks.
+              </p>
+              <button class="btn btn-primary col-4 shadow" href="#">More info</button>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane" id="sharing" role="tabpanel" aria-labelledby="easy-sharing-tab">
+          <div class="tab-pane" id="searching" role="tabpanel" aria-labelledby="speedy-searching-tab">
+            <div class="row align-items-center mt-5">
+              <div class="justify-content-center col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                <img src="img/illustration-features-tab-3.svg" class="img-fluid" alt="Features-1">
+              </div>
+              <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                <h6 class="display-6 fw-bold">Share your bookmarks</h6>
+                <p class="text-justify mb-5">
+                  Easily share your bookmarks and collections with others. Create a shareable link that you can send at the click of a button.
+                </p>
+                <button class="btn btn-primary col-4 shadow" href="#">More info</button>
+              </div>
+            </div>
+          </div>
+        
+        </div>
       </div>
     </div>
 
-    </div>
 
 
-    <ul class="nav nav-tabs" id="myTab" role="tablist">
-      <li class="nav-item" role="presentation">
-        <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">Home</button>
-      </li>
-      <li class="nav-item" role="presentation">
-        <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Profile</button>
-      </li>
-      <li class="nav-item" role="presentation">
-        <button class="nav-link" id="messages-tab" data-bs-toggle="tab" data-bs-target="#messages" type="button" role="tab" aria-controls="messages" aria-selected="false">Messages</button>
-      </li>
-      <li class="nav-item" role="presentation">
-        <button class="nav-link" id="settings-tab" data-bs-toggle="tab" data-bs-target="#settings" type="button" role="tab" aria-controls="settings" aria-selected="false">Settings</button>
-      </li>
-    </ul>
     
-    <div class="tab-content">
-      <div class="tab-pane active" id="home" role="tabpanel" aria-labelledby="home-tab">...</div>
-      <div class="tab-pane" id="profile" role="tabpanel" aria-labelledby="profile-tab">...</div>
-      <div class="tab-pane" id="messages" role="tabpanel" aria-labelledby="messages-tab">...</div>
-      <div class="tab-pane" id="settings" role="tabpanel" aria-labelledby="settings-tab">...</div>
-    </div>
+
+
+    
     
 
     <!-- botstrap -->

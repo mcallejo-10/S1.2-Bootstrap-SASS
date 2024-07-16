@@ -1,14 +1,11 @@
 
-$primary: #aae152;
+$primary: #5265E1;
 $secondary: #FA5959;
 
 
 $theme-colors: (
   "primary":    $primary,
   "secondary":  $secondary
-);
-
-.nav-item {
-    margin-right: 1.5rem;
-}
+  );
+  
 @import "/Users/mirandacallejonhuertes/node_modules/bootstrap/scss/bootstrap";

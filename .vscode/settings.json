@@ -1,3 +1,15 @@
 {
-    "liveServer.settings.port": 5501
+    "liveServer.settings.port": 5501,
+
+    "editor.bracketPairColorization.enabled": true,
+    "editor.guides.bracketPairs": "active",
+    "editor.matchBrackets": "always",
+    "workbench.colorCustomizations": {
+        "editorBracketHighlight.foreground1": "#FFD700",  // Gold
+        "editorBracketHighlight.foreground2": "#DAA520",  // GoldenRod
+        "editorBracketHighlight.foreground3": "#ADFF2F",  // GreenYellow
+        "editorBracketHighlight.foreground4": "#7FFF00",  // Chartreuse
+        "editorBracketHighlight.foreground5": "#32CD32",  // LimeGreen
+        "editorBracketHighlight.foreground6": "#00FF7F"   // SpringGreen
+    }
 }
