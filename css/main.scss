@@ -1,14 +1,28 @@
 
-$primary: #5265E1;
+$primary: #5273e1;
 $secondary: #FA5959;
-
-
 
 $theme-colors: (
   "primary":    $primary,
-  "secondary":  $secondary
+  "secondary":  $secondary,
   );
 
-
-  
 @import "../assets/css/bootstrap";
+  
+  
+.nav-tabs .nav-link {
+  color:black;
+  border: 2px;
+  border-bottom: 1px solid rgb(131, 131, 131)
+}
+
+.nav-tabs .nav-link:hover {
+  color:rgb(255, 84, 84);
+  border-bottom: 1px solid rgb(131, 131, 131)
+  }
+  
+.nav-tabs .nav-link.active {
+  color:black;
+  font-weight: bold;
+  border-bottom: 3px solid $secondary;
+}
