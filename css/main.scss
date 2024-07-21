@@ -1,13 +1,28 @@
 
-$primary: #5273e1;
+// $font-family-sans-serif: "Rubik", sans-serif;
+
+$primary:#5265E1;
 $secondary: #FA5959;
 
-$theme-colors: (
-  "primary":    $primary,
-  "secondary":  $secondary,
-  );
+// $theme-colors: (
+//   "primary":    $primary,
+//   "secondary":  $secondary,
+//   );
 
-@import "../assets/css/bootstrap";
+
+.card-group {
+  margin-left: 50%;
+  margin-right: 50%;
+  padding: 20rem;
+}
+.dotted-line {
+  border-top: 4px dotted #828282;
+  margin: 10px 0.5%;    
+}
+
+
+
+  @import "../node_modules/bootstrap/scss/bootstrap.scss";
   
   
 .nav-tabs .nav-link {

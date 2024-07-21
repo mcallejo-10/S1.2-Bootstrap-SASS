@@ -1,136 +1,193 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" contetnt="miranda">
-    <title>S1.2. Bootstrap&SASS</title>
-    
-    <!-- Custom Css  -->
-    <link rel="stylesheet" href="css/custom-bootstrap.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" contetnt="miranda">
+  <title>S1.2. Bootstrap&SASS</title>
+
+  <!-- Custom Css  -->
+  <link rel="stylesheet" href="./css/main.css" />
 
 
-  </head>
-  
-  <body>
-    <!-- barra de navegació -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-white top-50">
-      <div class="container-fluid pt-4 m7-3">
-        <a class="navbar-brand" href="#">
-          <img src="img/logo-bookmark.svg" alt="logo-bookmark">
-        </a>
-        <button class="navbar-toggler border-0"  data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
-          <img src="img/icon-hamburger.svg" alt="icon-hamburger">
-        </button>
-        <div class="collapse navbar-collapse position-absolute top-50 end-0 translate-middle" id="navbarSupportedContent">
-          <ul class="navbar-nav mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link"  href="#">FEATURES</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">PRICING</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">CONTACT</a>
-            </li>
-            <li>
-              <button class="btn text-uppercase shadow btn-danger" type="submit">Login</button>
-            </li>
-          </ul>   
-        </div>
-      </div>
-    </nav>
-<!-- contingut principal -->
-    <div class="row mt-5">
-      <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
-        <h6 class="display-6 fw-bold">A Simple Bookmark Manager</h6>
-        <p class="text-justify mb-5">
-          A clean and simple interface to organize your favourite websites. Open a new browser tab and see your sites load
-          Instanuly. Iry Ittor Tree
-        </p>
-        <div class="row justify-content-sm-center justify-content-md-start justify-content-lg-start">
-          <button class="btn btn-primary col-4 me-2 shadow">Get it on Chrome</button>
-          <button class="btn btn-light col-4 shadow">Get it on Firefox</button>
-        </div>
-      </div>
-      <div class="justify-content-center col-sm-12 col-md-6 col-lg-6 col-xl-6 mt-2">
-        <img src="img/illustration-hero.svg" class="img-fluid bakground-color-primary" alt="El mundo">
+</head>
+
+<body class="ms-5 ps-4 me-5 ">
+  <!-- barra de navegació -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-white top-50 ms-5 ps-4 me-5">
+    <div class="container-fluid pt-4 m7-3">
+      <a class="navbar-brand" href="#">
+        <img src="img/logo-bookmark.svg" alt="logo-bookmark">
+      </a>
+      <button class="navbar-toggler border-0" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
+        <img src="img/icon-hamburger.svg" alt="icon-hamburger">
+      </button>
+      <div class="collapse navbar-collapse position-absolute top-50 end-0 translate-middle" id="navbarSupportedContent">
+        <ul class="navbar-nav mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="#">FEATURES</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">PRICING</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">CONTACT</a>
+          </li>
+          <li>
+            <button class="btn text-uppercase shadow btn-danger" type="submit">Login</button>
+          </li>
+        </ul>
       </div>
     </div>
-<!-- funcionalitats -->
-    <div class="column">
-      <div class="justify-content-center row mt-5 ">
-        <div class="col-sm-12 col-md-6 col-lg-8 col-xl-8 ">
-          <h6 class="text-center">Features</h6>
-          <p class="text-center">Uur aim is to make it quick ana easy tor you to access your favourite websites. Your bookmarks sync between your devices so you call access them on the go
-            Simple Bookmarking opeedy searching Lasy onalng</p>
-        </div>
+  </nav>
+  <!-- contingut principal -->
+  <div class="row mt-5 ms-5 ps-4 me-5">
+    <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 pe-5 align-content-center">
+      <h6 class="display-6 fw-semibold">A Simple Bookmark Manager</h6>
+      <p class="text-justify mb-5t text-black-50">
+        A clean and simple interface to organize your favourite websites. Open a new browser tab and see your sites load
+        instantly. Try it for free.
+      </p>
+      <div class="row justify-content-sm-center justify-content-md-start justify-content-lg-start">
+        <button class="btn btn-primary col-4 me-2 shadow">Get it on Chrome</button>
+        <button class="btn btn-light col-4 shadow">Get it on Firefox</button>
       </div>
+    </div>
+    <div class="justify-content-center col-sm-12 col-md-6 col-lg-6 col-xl-6 mt-2">
+      <img src="img/illustration-hero.svg" class="img-fluid bakground-color-primary" alt="El mundo">
+    </div>
+  </div>
+  <!-- funcionalitats -->
+  <div class="column ms-5 p-5 me-5 ">
+    <div class="justify-content-center row mt-5 ">
+      <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
+        <h6 class="text-center">Features</h6>
+        <p class="text-center text-black-50">Our aim is to make it quick and easy tor you to access your favourite
+          websites. Your bookmarks sync between your devices so you call access them on the go.
+          Simple Bookmarking opeedy searching Lasy onalng</p>
+      </div>
+    </div>
 
-      <ul class="nav nav-tabs justify-content-center border-0" role="tablist">
-        <li>
-          <button class="nav-link active" id="simple-bookmarking-tab" data-bs-toggle="tab" data-bs-target="#bookmarking" type="button" role="tab" aria-controls="bookmarking" aria-selected="true">Simple Bookmarking</button>
-        </li>
-        <li>
-          <button class="nav-link" id="speedy-searching-tab" data-bs-toggle="tab" data-bs-target="#searching" type="button" role="tab" aria-controls="searching" aria-selected="true">Speedy Searching</button>
-        </li>
-        <li>
-          <button class="nav-link" id="easy-sharing-tab" data-bs-toggle="tab" data-bs-target="#sharing" type="button" role="tab" aria-controls="sharing" aria-selected="true">Easy Sharing</button>
-        </li>
-      </ul>    
-      <div class="tab-content ">
-        <div class="tab-pane active" id="bookmarking" role="tabpanel" aria-labelledby="simple-bookmarking-tab">
-          <div class="row align-items-center mt-5">
-            <div class="justify-content-center col-sm-12 col-md-6 col-lg-6 col-xl-6">
-              <img src="img/illustration-features-tab-1.svg" class="img-fluid" alt="Features-1">
-            </div>
-            <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
-              <h6 class="display-6 fw-bold">Bookmark in one click</h6>
-              <p class="text-justify mb-5">
-                Organize your bookmarks however you like. Our simple arag-and-arop Interrace cives you complete control over how vou manage vour tavourite sites.
-              </p>
-              <button class="btn btn-primary col-4 shadow" href="#">More info</button>
-            </div>
+    <ul class="nav nav-tabs justify-content-center border-0 mt-4" role="tablist">
+      <li>
+        <button class="nav-link active px-5" id="simple-bookmarking-tab" data-bs-toggle="tab"
+          data-bs-target="#bookmarking" type="button" role="tab" aria-controls="bookmarking" aria-selected="true">Simple
+          Bookmarking</button>
+      </li>
+      <li>
+        <button class="nav-link px-5" id="speedy-searching-tab" data-bs-toggle="tab" data-bs-target="#searching"
+          type="button" role="tab" aria-controls="searching" aria-selected="true">Speedy Searching</button>
+      </li>
+      <li>
+        <button class="nav-link px-5" id="easy-sharing-tab" data-bs-toggle="tab" data-bs-target="#sharing" type="button"
+          role="tab" aria-controls="sharing" aria-selected="true">Easy Sharing</button>
+      </li>
+    </ul>
+    <div class="tab-content ">
+      <div class="tab-pane active" id="bookmarking" role="tabpanel" aria-labelledby="simple-bookmarking-tab">
+        <div class="row align-items-center mt-5">
+          <div class="justify-content-center col-sm-12 col-md-6 col-lg-6 col-xl-6">
+            <img src="img/illustration-features-tab-1.svg" class="img-fluid" alt="Features-1">
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
+            <h6 class="display-6 fw-bold">Bookmark in one click</h6>
+            <p class="text-justify mb-5 text-black-50">
+              Organize your bookmarks however you like. Our simple arag-and-arop Interrace cives you complete control
+              over how vou manage vour tavourite sites.
+            </p>
+            <button class="btn btn-primary col-4 shadow" href="#">More info</button>
           </div>
         </div>
+      </div>
+      <div class="tab-pane" id="searching" role="tabpanel" aria-labelledby="speedy-searching-tab">
+        <div class="row align-items-center mt-5">
+          <div class="justify-content-center col-sm-12 col-md-6 col-lg-6 col-xl-6">
+            <img src="img/illustration-features-tab-2.svg" class="img-fluid" alt="Features-1">
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
+            <h6 class="display-6 fw-bold">Intelligent search</h6>
+            <p class="text-justify mb-5 text-black-50">
+              Our powerful search feature will help you find saved sites in no time at all. No need to trawl through all
+              of your bookmarks.
+            </p>
+            <button class="btn btn-primary col-4 shadow" href="#">More info</button>
+          </div>
+        </div>
+      </div>
+      <div class="tab-pane" id="sharing" role="tabpanel" aria-labelledby="easy-sharing-tab">
         <div class="tab-pane" id="searching" role="tabpanel" aria-labelledby="speedy-searching-tab">
           <div class="row align-items-center mt-5">
             <div class="justify-content-center col-sm-12 col-md-6 col-lg-6 col-xl-6">
-              <img src="img/illustration-features-tab-2.svg" class="img-fluid" alt="Features-1">
+              <img src="img/illustration-features-tab-3.svg" class="img-fluid" alt="Features-1">
             </div>
             <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
-              <h6 class="display-6 fw-bold">Intelligent search</h6>
-              <p class="text-justify mb-5">
-                Our powerful search feature will help you find saved sites in no time at all. No need to trawl through all of your bookmarks.
+              <h6 class="display-6 fw-bold">Share your bookmarks</h6>
+              <p class="text-justify mb-5 text-secondary">
+                Easily share your bookmarks and collections with others. Create a shareable link that you can send at
+                the click of a button.
               </p>
               <button class="btn btn-primary col-4 shadow" href="#">More info</button>
             </div>
           </div>
         </div>
-        <div class="tab-pane" id="sharing" role="tabpanel" aria-labelledby="easy-sharing-tab">
-          <div class="tab-pane" id="searching" role="tabpanel" aria-labelledby="speedy-searching-tab">
-            <div class="row align-items-center mt-5">
-              <div class="justify-content-center col-sm-12 col-md-6 col-lg-6 col-xl-6">
-                <img src="img/illustration-features-tab-3.svg" class="img-fluid" alt="Features-1">
-              </div>
-              <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
-                <h6 class="display-6 fw-bold">Share your bookmarks</h6>
-                <p class="text-justify mb-5">
-                  Easily share your bookmarks and collections with others. Create a shareable link that you can send at the click of a button.
-                </p>
-                <button class="btn btn-primary col-4 shadow" href="#">More info</button>
-              </div>
+
+      </div>
+    </div>
+  </div>
+
+
+  <!-- downloads -->
+  <div class="column m-5 px-6 ps-4">
+    <div class="justify-content-center row mt-5 ">
+      <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 mb-5">
+        <h6 class="text-center">Download the extension</h6>
+        <p class="text-center text-black-50">
+          We've got more browsers in the pipeline. Please do let us know if vou ve got a favourite you'd like us to
+          prioritize.</p>
+      </div>
+
+      <div class="card-goup row position-relative mx-6 px-5">
+        <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4 justify-content-centre">
+          <div class="card border-0 shadow text-center">
+            <div class="card-body">
+              <img class="card-img-top p-5 img-fluid" src="img/logo-chrome.svg" alt="logo-chrome">
+              <h5 class="cart-title">Add to Chrome</h5>
+              <p class="card-text text-black-50 mb-5"> Minimum version 62</p>
+              <div class="dotted-line my-3"></div>
+              <a href="#" class="btn btn-primary m-2">Add & Install Extension</a>
             </div>
           </div>
-        
+        </div>
+        <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4 justify-content-centre mt-4">
+          <div class="card border-0 shadow text-center">
+            <div class="card-body">
+              <img class="card-img-top p-5 m-2" src="img/logo-firefox.svg" alt="logo-firefox">
+              <h5 class="cart-title">Add to Chrome</h5>
+              <p class="card-text text-black-50 mb-5"> Minimum version 62</p>
+              <div class="dotted-line my-3"></div>
+              <a href="#" class="btn btn-primary m-2">Add & Install Extension</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4 justify-content-centre mt-5">
+          <div class="card border-0 shadow text-center ">
+            <div class="card-body">
+              <img class="card-img-top p-5 m-2" src="img/logo-opera.svg" alt="logo-opera">
+              <h5 class="cart-title">Add to Chrome</h5>
+              <p class="card-text text-black-50 mb-5"> Minimum version 62</p>
+              <div class="dotted-line my-3"></div>
+              <a href="#" class="btn btn-primary m-2">Add & Install Extension</a>
+            </div>
+          </div>
         </div>
       </div>
-    </div> 
-    
+    </div>
+  </div>
 
-    <!-- botstrap -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-      crossorigin="anonymous"></script>
-    </body>
-    </html>
+
+  <!-- botstrap -->
+  <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
