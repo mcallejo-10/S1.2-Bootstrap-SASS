@@ -13,7 +13,7 @@
 
 </head>
 
-<body class="ms-5 ps-4 me-5 ">
+<body class="mx-sm-0 mx-md-1 mx-lg-5 mx-xl-6 ">
   <!-- barra de navegació -->
   <nav class="navbar navbar-expand-lg navbar-light bg-white top-50 ms-5 ps-4 me-5">
     <div class="container-fluid pt-4 m7-3">
@@ -50,12 +50,12 @@
         instantly. Try it for free.
       </p>
       <div class="row justify-content-sm-center justify-content-md-start justify-content-lg-start">
-        <button class="btn btn-primary col-4 me-2 shadow">Get it on Chrome</button>
-        <button class="btn btn-light col-4 shadow">Get it on Firefox</button>
+        <button class="btn btn-primary col-sm-3 col-md-4 col-lg-5 col-xl-5 me-2 shadow">Get it on Chrome</button>
+        <button class="btn btn-light col-sm-4 col-md-4 col-lg-5 col-xl-5 shadow">Get it on Firefox</button>
       </div>
     </div>
     <div class="justify-content-center col-sm-12 col-md-6 col-lg-6 col-xl-6 mt-2">
-      <img src="img/illustration-hero.svg" class="img-fluid bakground-color-primary" alt="El mundo">
+      <img src="img/illustration-hero.svg" class="img-fluid bakground-color-primary" alt="img-hero">
     </div>
   </div>
   <!-- funcionalitats -->
@@ -139,51 +139,139 @@
 
   <!-- downloads -->
   <div class="column m-5 px-6 ps-4">
-    <div class="justify-content-center row mt-5 ">
-      <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 mb-5">
+    <div class="justify-content-center row">
+
+      <div class=" row col-sm-12 col-md-6 col-lg-6 col-xl-6 mb-5 justify-content-center">
         <h6 class="text-center">Download the extension</h6>
         <p class="text-center text-black-50">
           We've got more browsers in the pipeline. Please do let us know if vou ve got a favourite you'd like us to
           prioritize.</p>
       </div>
+    </div>
 
-      <div class="card-goup row position-relative mx-6 px-5">
-        <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4 justify-content-centre">
-          <div class="card border-0 shadow text-center">
-            <div class="card-body">
-              <img class="card-img-top p-5 img-fluid" src="img/logo-chrome.svg" alt="logo-chrome">
-              <h5 class="cart-title">Add to Chrome</h5>
-              <p class="card-text text-black-50 mb-5"> Minimum version 62</p>
-              <div class="dotted-line my-3"></div>
-              <a href="#" class="btn btn-primary m-2">Add & Install Extension</a>
+    <div class="card-goup row position-relative mx-6 px-5">
+      <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4 justify-content-centre">
+        <div class="card border-0 shadow text-center">
+          <div class="card-body mx-0 px-0">
+            <img class="card-img-top p-5 img-fluid" src="img/logo-chrome.svg" alt="logo-chrome">
+            <h5 class="cart-title">Add to Chrome</h5>
+            <p class="card-text text-black-50 mb-3"> Minimum version 62</p>
+            <img class="card-img" src="img/bg-dots.svg" alt="bg-dots">
+            <a href="#" class="btn btn-primary m-2">Add & Install Extension</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4 justify-content-centre mt-4">
+        <div class="card border-0 shadow text-center">
+          <div class="card-body mx-0 px-0">
+            <img class="card-img-top p-5 m-2" src="img/logo-firefox.svg" alt="logo-firefox">
+            <h5 class="cart-title">Add to Firefox</h5>
+            <p class="card-text text-black-50 mb-3"> Minimum version 55</p>
+            <img class="card-img" src="img/bg-dots.svg" alt="bg-dots">
+            <a href="#" class="btn btn-primary m-2">Add & Install Extension</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4 justify-content-centre mt-5">
+        <div class="card border-0 shadow text-center ">
+          <div class="card-body mx-0 px-0">
+            <img class="card-img-top p-5 m-2" src="img/logo-opera.svg" alt="logo-opera">
+            <h5 class="cart-title">Add to Opera</h5>
+            <p class="card-text text-black-50 mb-3"> Minimum version 46</p>
+            <img class="card-img" src="img/bg-dots.svg" alt="bg-dots">
+            <a href="#" class="btn btn-primary m-2">Add & Install Extension</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- faqs -->
+
+  <div class="column justify-content-center">
+    <div class="justify-content-center row mt-5 ">
+      <div class=" col-md-6 col-lg-6 col-xl-6">
+        <h6 class="text-center">Frequently Asked Questions</h6>
+        <p class="text-center text-black-50">Here are some of our FAQs. If you any other questions you'd like answered
+          please feel free to email us.</p>
+      </div>
+    </div>
+    <div class="row justify-content-center">
+      <div class="accordion accordion-flush col-sm-12 col-md-6 col-lg-6 col-xl-6" id="acordionFaqs">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#whatBookmark" aria-expanded="false" aria-controls="whatBookmark">
+              What is Bookmark?
+            </button>
+          </h2>
+          <div id="whatBookmark" class="accordion-collapse collapse" aria-labelledby="headingOne"
+            data-bs-parent="#accordionFaqs">
+            <div class="accordion-body">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque quis perspiciatis modi dolor? Sunt
+              pariatur, qui fugiat reiciendis aperiam nihil laborum cupiditate vero praesentium saepe dolorum obcaecati,
+              voluptatum atque voluptatem, nemo beatae. Ex ducimus dolores, totam tempora expedita itaque temporibus
+              nostrum accusamus quod facilis vero facere nihil sunt inventore quibusdam?
             </div>
           </div>
         </div>
-        <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4 justify-content-centre mt-4">
-          <div class="card border-0 shadow text-center">
-            <div class="card-body">
-              <img class="card-img-top p-5 m-2" src="img/logo-firefox.svg" alt="logo-firefox">
-              <h5 class="cart-title">Add to Chrome</h5>
-              <p class="card-text text-black-50 mb-5"> Minimum version 62</p>
-              <div class="dotted-line my-3"></div>
-              <a href="#" class="btn btn-primary m-2">Add & Install Extension</a>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="hedingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#HowRequest" aria-expanded="false" aria-controls="HowRequest">
+              How can I request a new browser?
+            </button>
+          </h2>
+          <div id="HowRequest" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+            data-bs-parent="#accordionFaqs">
+            <div class="accordion-body">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque quis perspiciatis modi dolor? Sunt
+              pariatur, qui fugiat reiciendis aperiam nihil laborum cupiditate vero praesentium saepe dolorum obcaecati,
+              voluptatum atque voluptatem, nemo beatae. Ex ducimus dolores, totam tempora expedita itaque temporibus
+              nostrum accusamus quod facilis vero facere nihil sunt inventore quibusdam?
             </div>
           </div>
         </div>
-        <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4 justify-content-centre mt-5">
-          <div class="card border-0 shadow text-center ">
-            <div class="card-body">
-              <img class="card-img-top p-5 m-2" src="img/logo-opera.svg" alt="logo-opera">
-              <h5 class="cart-title">Add to Chrome</h5>
-              <p class="card-text text-black-50 mb-5"> Minimum version 62</p>
-              <div class="dotted-line my-3"></div>
-              <a href="#" class="btn btn-primary m-2">Add & Install Extension</a>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#mobileApp" aria-expanded="false" aria-controls="mobileApp">
+              Is there a mobile app?
+            </button>
+          </h2>
+          <div id="mobileApp" class="accordion-collapse collapse" aria-labelledby="headingThree"
+            data-bs-parent="#accordionFaqs">
+            <div class="accordion-body">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque quis perspiciatis modi dolor? Sunt
+              pariatur, qui fugiat reiciendis aperiam nihil laborum cupiditate vero praesentium saepe dolorum obcaecati,
+              voluptatum atque voluptatem, nemo beatae. Ex ducimus dolores, totam tempora expedita itaque temporibus
+              nostrum accusamus quod facilis vero facere nihil sunt inventore quibusdam?
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingFour">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#chromiunBrowsers" aria-expanded="false" aria-controls="chromiunBrowsers">
+              What about other Chromium browsers?
+            </button>
+          </h2>
+          <div id="chromiunBrowsers" class="accordion-collapse collapse" aria-labelledby="headingFour"
+            data-bs-parent="#accordionFaqs">
+            <div class="accordion-body">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque quis perspiciatis modi dolor? Sunt
+              pariatur, qui fugiat reiciendis aperiam nihil laborum cupiditate vero praesentium saepe dolorum obcaecati,
+              voluptatum atque voluptatem, nemo beatae. Ex ducimus dolores, totam tempora expedita itaque temporibus
+              nostrum accusamus quod facilis vero facere nihil sunt inventore quibusdam?
             </div>
           </div>
         </div>
       </div>
     </div>
   </div>
+
+
+  <!-- footer -->
 
 
   <!-- botstrap -->

@@ -15,9 +15,9 @@ $secondary: #FA5959;
   margin-right: 50%;
   padding: 20rem;
 }
-.dotted-line {
-  border-top: 4px dotted #828282;
-  margin: 10px 0.5%;    
+
+.card-group .card {
+  max-width: 208px;
 }
 
 
@@ -41,3 +41,20 @@ $secondary: #FA5959;
   font-weight: bold;
   border-bottom: 3px solid $secondary;
 }
+.body {
+  max-width: 1200;
+}
+// @media (max-width: 765px) {
+//   .body {
+//     margin-left: 0;
+//     margin-right: 0;
+//     padding: 0;
+//   }
+//   .card-group {
+//     margin-left: 0;
+//     margin-right: 0;
+//     padding: 0;
+//   }
+
+  
+// }

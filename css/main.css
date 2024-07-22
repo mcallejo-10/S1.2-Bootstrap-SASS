@@ -5,9 +5,8 @@
   padding: 20rem;
 }
 
-.dotted-line {
-  border-top: 4px dotted #828282;
-  margin: 10px 0.5%;
+.card-group .card {
+  max-width: 208px;
 }
 
 /*!
@@ -11870,6 +11869,19 @@ textarea.form-control-lg {
   color: black;
   font-weight: bold;
   border-bottom: 3px solid #FA5959;
+}
+
+@media screen and (max-width: 576px) {
+  .body {
+    margin-left: 0;
+    margin-right: 0;
+    padding: 0;
+  }
+  .card-group {
+    margin-left: 0;
+    margin-right: 0;
+    padding: 0;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
