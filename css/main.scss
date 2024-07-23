@@ -11,15 +11,26 @@ $btn-font-size: 0.97rem;
   padding: 20rem;
 }
 
-.card-group .card {
-  max-width: 208px;
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+
+#navbarContent.show {
+  overflow-y: auto;
+  .nav-item {
+   background-color: white;
+   border-bottom: 1px solid gray;
+   
+  }
 }
 
 
+.navbar-toggler {
+  border-color: #fff; 
+}
 
-  @import "../node_modules/bootstrap/scss/bootstrap.scss";
-  
-  
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+
 .nav-tabs .nav-link {
   color:black;
   border: 2px;
@@ -82,7 +93,7 @@ $btn-font-size: 0.97rem;
   position: absolute;
   top: 29%;
   left: 0;
-  width: 82%;
+  width: 73%;
   height: 82%;
   background-color: $primary;
   border-bottom-right-radius: 44%;

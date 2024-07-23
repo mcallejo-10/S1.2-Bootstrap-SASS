@@ -5,10 +5,6 @@
   padding: 20rem;
 }
 
-.card-group .card {
-  max-width: 208px;
-}
-
 /*!
  * Bootstrap  v5.3.3 (https://getbootstrap.com/)
  * Copyright 2011-2024 The Bootstrap Authors
@@ -11854,6 +11850,22 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+#navbarContent.show {
+  overflow-y: auto;
+}
+#navbarContent.show .nav-item {
+  background-color: white;
+  border-bottom: 1px solid gray;
+}
+
+.navbar-toggler {
+  border-color: #fff;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+
 .nav-tabs .nav-link {
   color: black;
   border: 2px;
@@ -11915,7 +11927,7 @@ textarea.form-control-lg {
   position: absolute;
   top: 29%;
   left: 0;
-  width: 82%;
+  width: 73%;
   height: 82%;
   background-color: #5265E1;
   border-bottom-right-radius: 44%;
