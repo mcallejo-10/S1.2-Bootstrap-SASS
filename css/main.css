@@ -2901,7 +2901,7 @@ textarea.form-control-lg {
   --bs-btn-padding-x: 0.75rem;
   --bs-btn-padding-y: 0.375rem;
   --bs-btn-font-family: ;
-  --bs-btn-font-size: 1rem;
+  --bs-btn-font-size: 0.97rem;
   --bs-btn-font-weight: 400;
   --bs-btn-line-height: 1.5;
   --bs-btn-color: var(--bs-body-color);
@@ -11871,17 +11871,54 @@ textarea.form-control-lg {
   border-bottom: 3px solid #FA5959;
 }
 
-@media screen and (max-width: 576px) {
-  .body {
-    margin-left: 0;
-    margin-right: 0;
-    padding: 0;
-  }
-  .card-group {
-    margin-left: 0;
-    margin-right: 0;
-    padding: 0;
-  }
+.accordion-button {
+  background: #FFFFFF !important;
+  color: black !important;
+  font-weight: bold;
+  border: 0px;
+}
+
+.accordion-button:focus {
+  box-shadow: none;
+}
+
+.collapsed {
+  color: black;
+  font-weight: normal;
+}
+
+.accordion-button:hover {
+  background: #FFFFFF;
+  color: #FA5959 !important;
+  font-weight: bold;
+  border-top: 1px solid rgb(131, 131, 131);
+  margin: 0px;
+}
+
+.body {
+  max-width: 1200;
+}
+
+.blue-spot-right {
+  z-index: -1;
+  position: absolute;
+  top: 29%;
+  right: 0;
+  width: 82%;
+  height: 82%;
+  background-color: #5265E1;
+  border-bottom-left-radius: 44%;
+}
+
+.blue-spot-left {
+  z-index: -1;
+  position: absolute;
+  top: 29%;
+  left: 0;
+  width: 82%;
+  height: 82%;
+  background-color: #5265E1;
+  border-bottom-right-radius: 44%;
 }
 
 /*# sourceMappingURL=main.css.map */

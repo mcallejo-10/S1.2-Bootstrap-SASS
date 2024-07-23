@@ -3,12 +3,7 @@
 
 $primary:#5265E1;
 $secondary: #FA5959;
-
-// $theme-colors: (
-//   "primary":    $primary,
-//   "secondary":  $secondary,
-//   );
-
+$btn-font-size: 0.97rem;
 
 .card-group {
   margin-left: 50%;
@@ -41,20 +36,54 @@ $secondary: #FA5959;
   font-weight: bold;
   border-bottom: 3px solid $secondary;
 }
+
+.accordion-button {
+  background: #FFFFFF !important;
+  color:black !important;
+  font-weight: bold;
+  border: 0px;
+  
+}
+.accordion-button:focus {
+  box-shadow: none;
+}
+
+
+.collapsed {
+  color:black;
+  font-weight: normal;
+}
+.accordion-button:hover {
+  background: #FFFFFF;
+  color: $secondary !important;
+  font-weight: bold;
+  border-top: 1px solid rgb(131, 131, 131);
+  margin: 0px;
+}
+
+
 .body {
   max-width: 1200;
 }
-// @media (max-width: 765px) {
-//   .body {
-//     margin-left: 0;
-//     margin-right: 0;
-//     padding: 0;
-//   }
-//   .card-group {
-//     margin-left: 0;
-//     margin-right: 0;
-//     padding: 0;
-//   }
 
-  
-// }
+.blue-spot-right {
+  z-index: -1;
+  position: absolute;
+  top: 29%;
+  right: 0;
+  width: 82%;
+  height: 82%;
+  background-color: $primary;
+  border-bottom-left-radius: 44%;
+}
+
+.blue-spot-left {
+  z-index: -1;
+  position: absolute;
+  top: 29%;
+  left: 0;
+  width: 82%;
+  height: 82%;
+  background-color: $primary;
+  border-bottom-right-radius: 44%;
+}
