@@ -1,5 +1,5 @@
 
-// $font-family-sans-serif: "Rubik", sans-serif;
+$font-family-sans-serif: "Rubik", sans-serif;
 
 $primary:#5265E1;
 $secondary: #FA5959;
@@ -21,7 +21,6 @@ $btn-font-size: 0.97rem;
    
   }
 }
-
 
 .navbar-toggler {
   border-color: #fff; 
@@ -104,4 +103,9 @@ $btn-font-size: 0.97rem;
   background-color: $primary;
   margin-top: 8rem;
   padding-top: 3rem;
+}
+
+#footer-navbar {
+  background-color: #242a4e;
+  font-size: small;
 }
