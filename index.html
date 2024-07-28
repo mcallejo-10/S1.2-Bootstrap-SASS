@@ -15,56 +15,58 @@
 
 <body>
   <!-- barra de navegació -->
-
-  <nav class="navbar navbar-expand-sm navbar-light bg-white p-3">
-    <div class="container pt-4 ">
-      <a class="navbar-brand" href="#">
-        <img src="img/logo-bookmark.svg" alt="logo-bookmark">
-      </a>
-      <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarContent">
-        <img src="img/icon-hamburger.svg" alt="icon-hamburger">
-      </button>
-      <div class="collapse navbar-collapse justify-content-end" id="navbarContent">
-        <ul class="navbar-nav" id="contents">
-          <li class="nav-item">
-            <a class="nav-link" href="#">FEATURES</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">PRICING</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">CONTACT</a>
-          </li>
-          <li class="nav-item">
-            <button class="btn text-uppercase shadow btn-danger m-1" id="login-button" type="submit">Login</button>
-          </li>
-        </ul>
-      </div>
+  <nav class="navbar navbar-expand-sm navbar-light bg-white p-3 m-3">
+    <a class="navbar-brand" href="#">
+      <img src="img/logo-bookmark.svg" alt="logo-bookmark">
+    </a>
+    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+      <img src="img/icon-hamburger.svg" alt="icon-hamburger">
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarContent">
+      <ul class="navbar-nav align-items-center" id="contents">
+        <li class="nav-item">
+          <a class="nav-link" href="#">FEATURES</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">PRICING</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">CONTACT</a>
+        </li>
+        <li class="nav-item">
+          <button class="btn text-uppercase shadow btn-danger m-1" id="login-button" type="submit">Login</button>
+        </li>
+      </ul>
     </div>
   </nav>
+
   <!-- contingut principal -->
-  <div class="row">
-    <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 align-content-center p-5">
-      <h3 class="fw-semibold">A Simple Bookmark Manager</h3>
-      <p class="text-justify mb-5t text-black-50">
-        A clean and simple interface to organize your favourite websites. Open a new browser tab and see your sites load
-        instantly. Try it for free.
-      </p>
-      <div class="d-flex gap-2">
-        <button type="button" class="btn btn-primary btn-sm mt-2 shadow custom-shadow">
-          <a class="nav-link m-0 mt-0 p-0 ps-3 pe-3" href="#">Get it on Chrome</a>
-        </button>
-        <button type="button" class="btn btn-light btn-sm mt-2 custom-bg-gray shadow custom-shadow btn-firefox">
-          <a class="nav-link m-0 mt-0 p-0 ps-3 pe-3" href="#">Get it on Firefox</a>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 align-content-center p-5">
+        <h3 class="fw-semibold">A Simple Bookmark Manager</h3>
+        <p class="text-justify mb-5t text-black-50">
+          A clean and simple interface to organize your favourite websites. Open a new browser tab and see your sites
+          load
+          instantly. Try it for free.
+        </p>
+        <div class="row d-flex gap-2">
+          <button type="button" class="col btn btn-primary btn-sm mt-2 shadow custom-shadow">
+            <a class="nav-link m-0 mt-0 p-0 ps-3 pe-3" href="#">Get it on Chrome</a>
+          </button>
+          <button type="button" class="col btn btn-light btn-sm mt-2 custom-bg-gray shadow custom-shadow btn-firefox">
+            <a class="nav-link m-0 mt-0 p-0 ps-3 pe-3" href="#">Get it on Firefox</a>
+        </div>
+      </div>
+      <div class="position-relative justify-content-center col-sm-12 col-md-6 col-lg-6 col-xl-6">
+        <img src="img/illustration-hero.svg" class="img-fluid bakground-color-primary pe-5" alt="img-hero">
+        <div class="blue-spot-right"></div>
       </div>
     </div>
-    <div class="position-relative justify-content-center col-sm-12 col-md-6 col-lg-6 col-xl-6">
-      <img src="img/illustration-hero.svg" class="img-fluid bakground-color-primary pe-5" alt="img-hero">
-      <div class="blue-spot-right"></div>
-    </div>
   </div>
+
   <!-- funcionalitats -->
-  <div class="column pb-5">
+  <div class="container-fluid pt-5">
     <div class="justify-content-center row mt-5 ">
       <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
         <h5 class="text-center">Features</h5>
@@ -73,26 +75,28 @@
           Simple Bookmarking opeedy searching Lasy onalng</p>
       </div>
     </div>
-
-    <ul class="nav nav-tabs justify-content-center border-0 mt-4" role="tablist">
-      <li>
-        <button class="nav-link active px-5" id="simple-bookmarking-tab" data-bs-toggle="tab"
-          data-bs-target="#bookmarking" type="button" role="tab" aria-controls="bookmarking" aria-selected="true">Simple
-          Bookmarking</button>
-      </li>
-      <li>
-        <button class="nav-link px-5" id="speedy-searching-tab" data-bs-toggle="tab" data-bs-target="#searching"
-          type="button" role="tab" aria-controls="searching" aria-selected="true">Speedy Searching</button>
-      </li>
-      <li>
-        <button class="nav-link px-5" id="easy-sharing-tab" data-bs-toggle="tab" data-bs-target="#sharing" type="button"
-          role="tab" aria-controls="sharing" aria-selected="true">Easy Sharing</button>
-      </li>
-    </ul>
-    <div class="tab-content ">
+    <div class="row">
+      <ul class="nav nav-tabs justify-content-center border-0 mt-4" role="tablist">
+        <li>
+          <button class="nav-link active px-5" id="simple-bookmarking-tab" data-bs-toggle="tab"
+            data-bs-target="#bookmarking" type="button" role="tab" aria-controls="bookmarking"
+            aria-selected="true">Simple
+            Bookmarking</button>
+        </li>
+        <li>
+          <button class="nav-link px-5" id="speedy-searching-tab" data-bs-toggle="tab" data-bs-target="#searching"
+            type="button" role="tab" aria-controls="searching" aria-selected="true">Speedy Searching</button>
+        </li>
+        <li>
+          <button class="nav-link px-5" id="easy-sharing-tab" data-bs-toggle="tab" data-bs-target="#sharing"
+            type="button" role="tab" aria-controls="sharing" aria-selected="true">Easy Sharing</button>
+        </li>
+      </ul>
+    </div>
+    <div class="tab-content">
       <div class="tab-pane active" id="bookmarking" role="tabpanel" aria-labelledby="simple-bookmarking-tab">
-        <div class="row align-items-center mt-5">
-          <div class="position-relative col-sm-12 col-md-5 col-lg-5 col-xl-5">
+        <div class="row align-items-center">
+          <div class="position-relative col-sm-12 col-md-6 col-lg-6 col-xl-6">
             <img src="img/illustration-features-tab-1.svg" class="img-fluid p-5" alt="Features-1">
             <div class="blue-spot-left"></div>
           </div>
@@ -127,7 +131,7 @@
           <div class="row align-items-center mt-5">
             <div class="position-relative justify-content-center col-sm-12 col-md-6 col-lg-6 col-xl-6">
               <img src="img/illustration-features-tab-3.svg" class="img-fluid p-5" alt="Features-1">
-              <div class="blue-spot-left"></div>            
+              <div class="blue-spot-left"></div>
             </div>
             <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 p-5">
               <h5>Share your bookmarks</h5>
@@ -145,28 +149,24 @@
 
 
   <!-- downloads -->
-  <div class="column m-lg-5 m-md-5 m-sm-0 pt-4 px-lg-5 px-md-5 px-sm-0  ">
-    <div class="justify-content-center row">
-
-      <div class=" row col-sm-12 col-md-6 col-lg-6 col-xl-6 mb-5 justify-content-center">
+  <div class="container pt-5">
+    <div class="row justify-content-center">
+      <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 mb-5 justify-content-center">
         <h5 class="text-center">Download the extension</h5>
         <p class="text-center text-black-50">
           We've got more browsers in the pipeline. Please do let us know if vou ve got a favourite you'd like us to
           prioritize.</p>
       </div>
     </div>
-
     <div
-      class="card-goup row position-relative col-sm-12 col-md-12 col-lg-12 col-xl-12 justify-content-center me-6 px-5">
+      class="row card-goup position-relative col-sm-12 col-md-12 col-lg-12 col-xl-12 justify-content-center me-6 px-5">
       <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4 justify-content-centre">
-        <div class="card border-0 shadow text-center">
-          <div class="card-body mx-0 px-0">
-            <img class="card-img-top p-5 img-fluid" src="img/logo-chrome.svg" alt="logo-chrome">
-            <h5 class="cart-title">Add to Chrome</h5>
-            <p class="card-text text-black-50 mb-3"> Minimum version 62</p>
-            <img class="card-img" src="img/bg-dots.svg" alt="bg-dots">
-            <a href="#" class="btn btn-primary m-2">Add & Install Extension</a>
-          </div>
+        <div class="card border-0 shadow text-center card-body mx-0 px-0">
+          <img class="card-img-top p-5 img-fluid" src="img/logo-chrome.svg" alt="logo-chrome">
+          <h5 class="cart-title">Add to Chrome</h5>
+          <p class="card-text text-black-50 mb-3"> Minimum version 62</p>
+          <img class="card-img" src="img/bg-dots.svg" alt="bg-dots">
+          <a href="#" class="btn btn-primary m-2">Add & Install Extension</a>
         </div>
       </div>
       <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4 justify-content-centre mt-4">
@@ -195,9 +195,8 @@
   </div>
 
   <!-- faqs -->
-
-  <div class="column justify-content-center text-center">
-    <div class="justify-content-center row mt-5 ">
+  <div class="container justify-content-center text-center">
+    <div class="row justify-content-center mt-5 ">
       <div class=" col-md-6 col-lg-6 col-xl-6">
         <h5 class="text-center">Frequently Asked Questions</h5>
         <p class="text-center text-black-50">Here are some of our FAQs. If you any other questions you'd like answered
@@ -276,59 +275,61 @@
         </div>
       </div>
     </div>
-    <button class="btn btn-primary shadow mt-5" href="#">More info</button>
+    <div class="row justify-content-center">
+      <button class="col-4 col-sm-4 col-md-2 col-lg-2 col-xl-2  btn btn-primary shadow mt-5" href="#">More info</button>
+    </div>
   </div>
 
-
   <!-- footer -->
-
-  <footer class="footer col-12">
-    <div class="container-fluid text-center pb-4">
+  <footer class="footer container-fluid">
+    <div class="row text-center pb-4">
       <p class="">35.000+ already joined</p>
       <h4 class="p-3 p-lg-4">Stay up-to-date with what we're doing</h4>
-      <form class="row justify-content-center needs-validation g-3" novalidate>
-        <div class="col-12 col-md-4 col-lg-4">
-          <input type="email" class="form-control col-4 p-2 " id="user-email" aria-describedby="emailHelp"
-            placeholder="Enter your email address" required>
-        </div>
-        <div class="col-12 col-md-2 col-lg-2">
-          <button type="submit" class="btn btn-secondary w-100 text-white col-4 p-2" value="Validate"
-            onclick="validateEmail()">Contact Us</button>
-        </div>
-      </form>
     </div>
-    <div class="container-fluid " id="footer-navbar">
-      <div class="container">
-        <ul class="nav flex-column flex-md-row flex-lg-row align-items-center gap-3 py-3 ">
-          <li class="nav-item">
-            <a class="navbar-brand" href="#">
-              <img src="img/logo-bookmark.svg" alt="logo Bookmark" height="20" class="mb-lg-1"></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-white" href="#features">FEATURES</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-white" href="#pricing">PRICING</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-white " href="#footer">CONTACT</a>
-          </li>
-          <li class="nav-item ps-md-5 ps-lg-5">
-            <a class="nav-link d-inline " href="https://www.facebook.com/"><img src="img/icon-facebook.svg"
-                alt="facebook-icon" height="19" class="social-icon" target=”_blank”></a>
-            <a class="nav-link d-inline" href="https://www.twitter.com/"><img src="./img/icon-twitter.svg"
-                alt="twitter-icon" height="18" class="social-icon" target=”_blank”></a>
-          </li>
-        </ul>
+    <form class="row justify-content-center needs-validation g-3 mb-3" novalidate>
+      <div class="col-12 col-sm-4 col-md-4 col-lg-4">
+        <input type="email" class="form-control col-4 p-2 " id="user-email" aria-describedby="emailHelp"
+          placeholder="Enter your email address" required>
+      </div>
+      <div class="col-12 col-sm-2 col-md-2 col-lg-2">
+        <button type="submit" class="btn btn-secondary w-100 text-white col-4 p-2" value="Validate"
+          onclick="validateEmail()">Contact Us</button>
+      </div>
+    </form>
+    <div class="row align-items-center py-2" id="footer-navbar">
+      <div class="col-sm-2 col-12 d-flex justify-content-center justify-content-sm-start mb-3 mb-sm-0 p-3">
+        <a href="#">
+          <img src="/img/logo-bookmark.svg" alt="Logo" class="img-fluid">
+        </a>
+      </div>
+      <div class="col-sm-6 col-12 d-flex justify-content-center justify-content-md-start  justify-content-lg-start">
+        <nav class="navbar">
+          <ul class="navbar-nav d-flex flex-column flex-sm-row gap-3">
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#">FEATURES</a>
+            </li>
+            <li class="nav-item ">
+              <a class="nav-link text-white" href="#">PRICING</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#">CONTACT</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="col-sm-4 col-12 d-flex justify-content-center justify-content-sm-end mt-3 mt-sm-0">
+        <img src="/img/icon-facebook.svg" alt="Facebook" class="mx-2" class="img-fluid">
+        <img src="/img/icon-twitter.svg" alt="Twitter" class="mx-2" class="img-fluid">
       </div>
     </div>
+
   </footer>
 
   <script src="./js/main.js"></script>
 
   <!-- botstrap -->
   <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-  
+
 </body>
 
 </html>
